@@ -1,0 +1,31 @@
+<article class="panel panel-default">
+    <div class="panel-body">
+        Project Name: {{project.projectName}}
+    </div>
+    <footer class="panel-footer">
+        <div class="client">
+            Client Name: {{project.clientName}}
+        </div>
+    </footer>
+    <footer class="panel-footer">
+        <div class="client">
+            Estimated Time: {{project.estTime}} hour/s
+        </div>
+    </footer>
+    <footer class="panel-footer" id="timeUsed">
+        <div class="client">
+            Time used: {{project.timeUsed}} hour/s
+        </div>
+    </footer>
+    <footer class="panel-footer">
+        <div class="config2">
+            <a  (click)="onEdit()">Edit Project</a>
+            <a  (click)="onDelete()">Delete Project</a>
+        </div>
+    </footer>
+    <footer class="panel-footer">
+            <div class="invoice">
+                <a  (click)="onInvoice()">Send Invoice</a>
+            </div>
+        </footer>
+</article>
